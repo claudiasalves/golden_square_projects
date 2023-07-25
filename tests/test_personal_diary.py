@@ -9,5 +9,9 @@ def test_return_first_five_words():
     assert result == "Hello everyone my name is"
 
 def test_return_first_five_words_plus_dots():
-     result = make_snippet ("Hello everyone my name is Claudia")
-     assert result == "Hello everyone my name is..."
+    result = make_snippet ("Hello everyone my name is Claudia")
+    assert result == "Hello everyone my name is..."
+
+def test_return_empty_string():
+    result = make_snippet("")
+    assert result == ""
